@@ -1,0 +1,4 @@
+2026-10-23 17:13:20,749 INFO  p.f.ServidorFerreteria - Servidor iniciado en http://localhost:8080/ ; reporte del catalogo disponible en Productos
+2026-10-23 17:16:26,701 INFO  p.f.ServidorFerreteria - Servidor iniciado en http://localhost:8080/ ; reporte del catalogo disponible en Productos
+2026-10-23 17:17:24,758 INFO  p.f.ServidorFerreteria - Servidor iniciado en http://localhost:8080/ ; reporte del catalogo disponible en Productos
+2026-10-23 17:18:13,628 INFO  p.f.ServidorFerreteria - Reporte Excel generado con 27 productos

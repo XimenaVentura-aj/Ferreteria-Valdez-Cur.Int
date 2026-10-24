@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo Valdez del Perú</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/footer-empresa.css">
+    <link rel="stylesheet" href="../css/login-registro.css">
+</head>
+<body id="carritoPage">
+<header class="header">
+    <a href="../index.html" class="logo" aria-label="Ir a la página principal"><img src="../img/logo.jpg" alt="Logo Grupo Valdez del Perú" class="logo-img"></a>
+    <nav class="navbar"><span class="auth-login-logo-side">
+    <span class="login-user-box">
+        <button id="btnLoginHeader" class="btn-login-header" type="button">Iniciar sesión</button>
+
+        <span id="loginUserBox" style="display:none;">
+            <button class="usuario-bienvenido" type="button" id="usuarioNombreTexto">Bienvenido</button>
+
+            <span class="menu-usuario" id="menuUsuario">
+                <span class="usuario-card-top">
+                    <span class="usuario-avatar"></span>
+                    <span class="usuario-datos">
+                        <strong class="usuarioNombreCompleto">Usuario</strong>
+                        <span class="usuarioCorreoCard">correo@ejemplo.com</span>
+                        <span class="usuario-verificado">🛡 Cuenta verificada</span>
+                    </span>
+                </span>
+
+
+                <button type="button" id="btnCerrarSesion" class="btn-cerrar-sesion-card">↪ Cerrar sesión</button>
+            </span>
+        </span>
+    </span>
+</span>
+        <a href="../index.html">Inicio</a>
+        <a href="productos.html">Productos</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="carrito.html" class="nav-carrito">🛒 Carrito <span class="contador-carrito">0</span></a>
+    </nav>
+</header>
+
+<section class="carrito-hero carrito-hero-premium">
+    <div class="carrito-hero-contenido">
+        <span class="carrito-badge">Compra segura y rápida</span>
+        <h1>Carrito de compras</h1>
+        <p>Revisa tus productos, ajusta cantidades y finaliza tu pedido con recojo en tienda o entrega a domicilio.</p>
+        <div class="carrito-beneficios">
+            <span> Productos verificados</span>
+            <span> Entrega coordinada</span>
+            <span> Pago por Yape o Plin</span>
+        </div>
+    </div>
+</section>
+
+<section class="checkout-progreso" aria-label="Progreso de compra">
+    <div class="progreso-item activo"><span>1</span><p>Carrito</p></div>
+    <div class="progreso-linea"></div>
+    <div class="progreso-item"><span>2</span><p>Datos</p></div>
+    <div class="progreso-linea"></div>
+    <div class="progreso-item"><span>3</span><p>Entrega</p></div>
+    <div class="progreso-linea"></div>
+    <div class="progreso-item"><span>4</span><p>Pago</p></div>
+</section>
+
+<main class="carrito-contenedor">
+    <section class="carrito-panel">
+        <div class="carrito-panel-titulo">
+            <h2>Productos seleccionados</h2>
+            <a href="productos.html">Seguir comprando</a>
+        </div>
+        <div id="listaCarrito" class="lista-carrito"></div>
+    </section>
+
+    <aside class="resumen-compra">
+        <h2>Resumen de compra</h2>
+        <div class="resumen-mini"><span id="cantidadResumen">0 productos</span><span>Compra protegida</span></div>
+        <div class="resumen-linea">
+            <span>Total a pagar</span>
+            <strong id="totalCarrito">S/. 0.00</strong>
+        </div>
+        <button id="btnContinuarDatos" type="button" class="btn-resumen">Continuar compra</button>
+        <p class="resumen-nota">El total se calcula automáticamente según la cantidad seleccionada.</p>
+    </aside>
+</main>
+
+<section id="pasoDatosCliente" class="checkout-paso checkout-card">
+    <span class="checkout-etiqueta">Paso 2</span>
+    <h2>Datos del cliente</h2>
+    <p>Completa tus datos para continuar con la compra.</p>
+    <form id="formDatosCliente" class="checkout-form">
+        <input type="text" placeholder="Nombre" required>
+        <input type="text" placeholder="Apellido" required>
+        <input type="email" placeholder="Correo electrónico" required>
+        <input type="tel" placeholder="Teléfono" required>
+        <input class="full" type="text" placeholder="Dirección" required>
+        <button class="full" type="submit">Continuar compra</button>
+    </form>
+</section>
+
+<section id="pasoEntrega" class="checkout-paso checkout-card">
+    <span class="checkout-etiqueta">Paso 3</span>
+    <h2>Elige la forma de entrega</h2>
+    <div class="opciones-entrega">
+        <button type="button" data-entrega="tienda"><strong> Recojo en tienda</strong><small>Sin costo adicional</small></button>
+        <button type="button" data-entrega="domicilio"><strong> A domicilio</strong><small>Entrega coordinada</small></button>
+    </div>
+
+    <div id="detalleTienda" class="opcion-entrega-detalle">
+        <h3>Grupo Valdez del Perú</h3>
+        <p><strong>Dirección:</strong> Jr. Azangaro 983 int 136 - Cercado de Lima</p>
+        <p>Puede recoger sus productos de lunes a viernes de 8 am hasta las 6 pm. <br> Se puede comunicar a este numero +51 907 997 495 si su producto ya se encuentra en tienda</p>
+        <button id="btnPagoTienda" type="button">Método de pago</button>
+    </div>
+
+    <div id="detalleDomicilio" class="opcion-entrega-detalle">
+        <h3>Datos para envío a domicilio</h3>
+        <div class="aviso-entrega-domicilio"> El producto se estará entregando entre 2 días a 1 semana, dependiendo de la zona de entrega. <br> Nos estaremos comunicando al numero que ingreso para cualquier aviso o informacion</div>
+        <form id="formDomicilio" class="checkout-form">
+            <input type="text" placeholder="Nombre" required>
+            <input type="text" placeholder="Apellido" required>
+            <input type="text" placeholder="DNI" maxlength="8" required>
+            <input type="email" placeholder="Correo electrónico" required>
+            <input type="text" value="Perú" readonly>
+            <input type="text" placeholder="Provincia" required>
+            <input type="text" placeholder="Distrito" required>
+            <input class="full" type="text" placeholder="Dirección" required>
+            <button class="full" type="submit">Método de pago</button>
+        </form>
+    </div>
+</section>
+
+<section id="pasoPago" class="checkout-paso checkout-card pago-card">
+    <span class="checkout-etiqueta">Paso 4</span>
+    <h2>Método de pago</h2>
+    <p>Selecciona Yape o Plin para realizar el pago.</p>
+    <div class="metodos-pago">
+        <button type="button" data-pago="yape" class="seleccionado"><strong>Yape</strong><small>Escanea el QR</small></button>
+        <button type="button" data-pago="plin"><strong>Plin</strong><small>Escanea el QR</small></button>
+    </div>
+    <div class="qr-pago">
+        <img id="qrPagoImagen" src="../img/yape.jpeg" alt="QR de pago Yape">
+        <div>
+            <h3>Escanea el QR para realizar tu pago</h3>
+            <p>Método seleccionado: <strong id="pagoSeleccionado">YAPE</strong></p>
+            <p>Enviar tu comprobante a este número: <strong>+51 907 997 495</strong></p>
+        </div>
+    </div>
+    <button id="btnConfirmarCompra" type="button" class="btn-confirmar">Confirmar compra</button>
+</section>
+
+<section id="mensajeCompraExitosa" class="checkout-paso compra-exitosa">
+    <h2> Tu compra fue realizada exitosamente</h2>
+    <p>Gracias por confiar en Grupo Valdez del Perú. Revisaremos tu comprobante y nos comunicaremos contigo.</p>
+    <a class="btn" href="productos.html">Volver a productos</a>
+</section>
+
+<footer class="footer-empresa">
+    <div class="footer-contenedor">
+        <div class="footer-columna footer-info">
+            <img class="footer-logo" src="../img/logo.jpg" alt="Logo de la empresa">
+            <h3>Grupo Valdez del Perú</h3>
+            <p><strong>Dirección:</strong> Jr. Azangaro 983 int 136 - Cercado de lima</p>
+            <p><strong>Correo:</strong> contacto@grupovaldezperu.com</p>
+            <p><strong>Teléfono:</strong> +51 907 997 495</p>
+        </div>
+
+        <div class="footer-columna footer-links">
+            <h3>Información legal</h3>
+            <a href="../terminos-condiciones.html">Términos y condiciones</a>
+            <a href="../libro-reclamaciones.html">Libro de reclamaciones</a>
+        </div>
+
+        <div class="footer-columna footer-columna-redes">
+            <h3>Redes sociales</h3>
+            <div class="footer-redes">
+                <a class="facebook" href="https://www.facebook.com/people/Grupo-Valdez-Del-Peru/61560764052104/" target="_blank" rel="noopener" title="Facebook">
+                    <img src="../img/Facebook.png" alt="Facebook">
+                </a>
+                <a class="instagram" href="https://www.instagram.com/grupovaldezperu/" target="_blank" rel="noopener" title="Instagram">
+                    <img src="../img/Instagram.png" alt="Instagram">
+                </a>
+                <a class="tiktok" href="https://www.tiktok.com/@grupovaldezperu?_r=1&_t=ZS-96lxQh0HkHQ" target="_blank" rel="noopener" title="TikTok">
+                    <img src="../img/tiktok.png" alt="TikTok">
+                </a>
+                <a class="whatsapp" href="https://wa.me/51907997495" target="_blank" rel="noopener" title="WhatsApp">
+                    <img src="../img/whatsapp.png" alt="WhatsApp">
+                </a>
+            </div>
+            <div class="footer-mapa">
+                <a href="https://www.google.com/maps/search/?api=1&query=Grupo+Valdez+del+Peru" target="_blank" rel="noopener" title="Ver ubicación">
+                    <img src="../img/mapa-ubicacion.svg" alt="Mapa de ubicación de la empresa">
+                </a>
+                <p>Haz clic en el mapa para ver la ubicación</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copy">
+        © 2026 Grupo Valdez del Perú. Todos los derechos reservados.
+    </div>
+</footer>
+
+<script src="../js/main.js"></script>
+<script src="../js/login-registro.js"></script>
+</body>
+</html>

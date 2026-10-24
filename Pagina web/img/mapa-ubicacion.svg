@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="260" viewBox="0 0 700 260">
+<defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#dbeafe"/><stop offset="1" stop-color="#fed7aa"/></linearGradient></defs>
+<rect width="700" height="260" rx="22" fill="url(#g)"/>
+<path d="M0 70 C160 120 240 30 390 95 C520 150 585 65 700 110" fill="none" stroke="#94a3b8" stroke-width="10" opacity=".65"/>
+<path d="M0 180 C140 130 260 215 390 160 C510 112 585 190 700 145" fill="none" stroke="#94a3b8" stroke-width="8" opacity=".65"/>
+<circle cx="350" cy="125" r="34" fill="#f97316"/>
+<path d="M350 55c-42 0-76 34-76 76 0 57 76 118 76 118s76-61 76-118c0-42-34-76-76-76zm0 110a34 34 0 1 1 0-68 34 34 0 0 1 0 68z" fill="#dc2626"/>
+<text x="350" y="42" text-anchor="middle" font-family="Arial" font-size="28" font-weight="700" fill="#0f172a">Ubicación de la empresa</text>
+</svg>

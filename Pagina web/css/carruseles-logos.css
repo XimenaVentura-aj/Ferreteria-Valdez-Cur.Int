@@ -1,0 +1,147 @@
+/* ====== BANNERS DE LOGOS / CARRUSELES ====== */
+.banners-logos {
+    width: 100%;
+    padding: 50px 6%;
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 45%, #ea580c 100%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+    align-items: stretch;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-logos-card {
+    position: relative;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.10);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 20px;
+    padding: 26px 18px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.22);
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner-logos-card h2 {
+    margin: 0 0 20px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.logo-carousel {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    padding: 8px 0;
+    background: transparent !important;
+    background-image: none !important;
+}
+
+.logo-carousel::before,
+.logo-carousel::after,
+.banners-logos::before,
+.banners-logos::after {
+    display: none !important;
+    content: none !important;
+    background: none !important;
+    background-image: none !important;
+}
+
+.logo-track {
+    display: flex;
+    width: max-content;
+    gap: 14px;
+    animation: moverLogosIzquierda 24s linear infinite;
+    background: transparent !important;
+    background-image: none !important;
+}
+
+.logo-track.derecha {
+    animation: moverLogosDerecha 24s linear infinite;
+}
+
+.logo-carousel:hover .logo-track {
+    animation-play-state: paused;
+}
+
+.logo-empresa {
+    width: 110px;
+    min-width: 110px;
+    height: 70px;
+    background: transparent !important;
+    background-image: none !important;
+    border: none;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    flex-shrink: 0;
+    filter: drop-shadow(0 5px 8px rgba(0, 0, 0, 0.25));
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.logo-empresa:hover {
+    transform: scale(1.08);
+    filter: drop-shadow(0 10px 16px rgba(0, 0, 0, 0.35));
+}
+
+.logo-empresa img {
+    max-width: 100px;
+    max-height: 58px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    background: transparent !important;
+}
+
+@keyframes moverLogosIzquierda {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+
+@keyframes moverLogosDerecha {
+    from { transform: translateX(-50%); }
+    to { transform: translateX(0); }
+}
+
+@media (max-width: 900px) {
+    .banners-logos {
+        grid-template-columns: 1fr;
+        padding: 40px 5%;
+    }
+}
+
+@media (max-width: 600px) {
+    .banner-logos-card {
+        padding: 22px 12px;
+    }
+
+    .banner-logos-card h2 {
+        font-size: 22px;
+    }
+
+    .logo-track {
+        gap: 10px;
+    }
+
+    .logo-empresa {
+        width: 92px;
+        min-width: 92px;
+        height: 58px;
+    }
+
+    .logo-empresa img {
+        max-width: 84px;
+        max-height: 48px;
+    }
+}

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo Valdez del Perú</title>
+    <link rel="stylesheet" href="../css/style.css">
+<style></style>
+    <link rel="stylesheet" href="../css/carruseles-logos.css">
+    <link rel="stylesheet" href="../css/footer-empresa.css">
+    <link rel="stylesheet" href="../css/login-registro.css">
+<style>.btn-reporte-excel{display:inline-block;margin:12px 0;padding:11px 17px;background:#187448;color:#fff;text-decoration:none;border-radius:6px;font-weight:600}.btn-reporte-excel:hover{background:#105a37}</style>
+</head>
+<body>
+<header class="header">
+    <a href="../index.html" class="logo" aria-label="Ir a la página principal"><img src="../img/logo.jpg" alt="Logo Grupo Valdez del Perú" class="logo-img"></a>
+    <nav class="navbar"><span class="auth-login-logo-side">
+    <span class="login-user-box">
+        <button id="btnLoginHeader" class="btn-login-header" type="button">Iniciar sesión</button>
+
+        <span id="loginUserBox" style="display:none;">
+            <button class="usuario-bienvenido" type="button" id="usuarioNombreTexto">Bienvenido</button>
+
+            <span class="menu-usuario" id="menuUsuario">
+                <span class="usuario-card-top">
+                    <span class="usuario-avatar"></span>
+                    <span class="usuario-datos">
+                        <strong class="usuarioNombreCompleto">Usuario</strong>
+                        <span class="usuarioCorreoCard">correo@ejemplo.com</span>
+                        <span class="usuario-verificado">🛡 Cuenta verificada</span>
+                    </span>
+                </span>
+
+
+                <button type="button" id="btnCerrarSesion" class="btn-cerrar-sesion-card">↪ Cerrar sesión</button>
+            </span>
+        </span>
+    </span>
+</span>
+
+        <a href="../index.html">Inicio</a>
+        <a href="productos.html">Productos</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="carrito.html" class="nav-carrito">🛒 Carrito <span class="contador-carrito">0</span></a>
+    </nav>
+</header>
+
+<section class="productos-hero">
+    <h1>Catálogo de productos</h1>
+    <p>Filtra por nombre, categoría y precio. Se muestran 9 productos por página.</p>
+</section>
+
+<main class="catalogo-contenedor">
+    <aside class="panel-filtros">
+        <h2>Filtros</h2>
+
+        <label for="filtroNombre">Nombre</label>
+        <input type="text" id="filtroNombre" placeholder="Buscar producto...">
+
+        <label for="filtroCategoria">Categorías</label>
+        <select id="filtroCategoria">
+            <option value="">Todas las categorías</option>
+            <option value="Herramientas Inalambricas">Herramientas Inalambricas</option>
+            <option value="Herramientas electricas">Herramientas electricas</option>
+            <option value="Herramientas manuales">Herramientas manuales</option>
+        </select>
+
+        <label>Filtro de precio</label>
+        <div class="precio-doble">
+            <input type="number" id="precioMin" min="0" placeholder="Mínimo">
+            <input type="number" id="precioMax" min="0" placeholder="Máximo">
+        </div>
+
+        <label for="ordenPrecio">Ordenar precio</label>
+        <select id="ordenPrecio">
+            <option value="">Sin ordenar</option>
+            <option value="asc">Aumentar precio</option>
+            <option value="desc">Disminuir precio</option>
+        </select>
+
+        <button id="limpiarFiltros" class="btn-filtro">Limpiar filtros</button>
+    </aside>
+
+    <section class="catalogo-productos">
+        <div class="catalogo-info">
+            <h2>Productos disponibles</h2>
+            <p id="contadorProductos">0 productos encontrados</p>
+            <button type="button" id="descargarReporteExcel" class="btn-reporte-excel" title="Exporta todos los productos del catálogo">Descargar reporte Excel</button>
+        </div>
+
+        <div id="productosGrid" class="grid productos-grid"></div>
+
+        <div class="paginacion">
+            <button id="btnAnterior">Anterior</button>
+            <span id="paginaActual">Página 1 de 1</span>
+            <button id="btnSiguiente">Siguiente</button>
+        </div>
+    </section>
+</main>
+    <section class="banners-logos">
+        <div class="banner-logos-card">
+            <h2>Nuestros proveedores</h2>
+            <div class="logo-carousel">
+                <div class="logo-track izquierda">
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="banner-logos-card">
+            <h2>Nuestros clientes</h2>
+            <div class="logo-carousel">
+                <div class="logo-track derecha">
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+<footer class="footer-empresa">
+    <div class="footer-contenedor">
+        <div class="footer-columna footer-info">
+            <img class="footer-logo" src="../img/logo.jpg" alt="Logo de la empresa">
+            <h3>Grupo Valdez del Perú</h3>
+            <p><strong>Dirección:</strong> Jr. Azangaro 983 int 136 - Cercado de lima</p>
+            <p><strong>Correo:</strong> contacto@grupovaldezperu.com</p>
+            <p><strong>Teléfono:</strong> +51 907 997 495</p>
+        </div>
+
+        <div class="footer-columna footer-links">
+            <h3>Información legal</h3>
+            <a href="../terminos-condiciones.html">Términos y condiciones</a>
+            <a href="../libro-reclamaciones.html">Libro de reclamaciones</a>
+        </div>
+
+        <div class="footer-columna footer-columna-redes">
+            <h3>Redes sociales</h3>
+            <div class="footer-redes">
+                <a class="facebook" href="https://www.facebook.com/people/Grupo-Valdez-Del-Peru/61560764052104/" target="_blank" rel="noopener" title="Facebook">
+                    <img src="../img/Facebook.png" alt="Facebook">
+                </a>
+                <a class="instagram" href="https://www.instagram.com/grupovaldezperu/" target="_blank" rel="noopener" title="Instagram">
+                    <img src="../img/Instagram.png" alt="Instagram">
+                </a>
+                <a class="tiktok" href="https://www.tiktok.com/@grupovaldezperu?_r=1&_t=ZS-96lxQh0HkHQ" target="_blank" rel="noopener" title="TikTok">
+                    <img src="../img/tiktok.png" alt="TikTok">
+                </a>
+                <a class="whatsapp" href="https://wa.me/51907997495" target="_blank" rel="noopener" title="WhatsApp">
+                    <img src="../img/whatsapp.png" alt="WhatsApp">
+                </a>
+            </div>
+            <div class="footer-mapa">
+                <a href="https://www.google.com/maps/search/?api=1&query=Grupo+Valdez+del+Peru" target="_blank" rel="noopener" title="Ver ubicación">
+                    <img src="../img/mapa-ubicacion.svg" alt="Mapa de ubicación de la empresa">
+                </a>
+                <p>Haz clic en el mapa para ver la ubicación</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copy">
+        © 2026 Grupo Valdez del Perú. Todos los derechos reservados.
+    </div>
+</footer>
+
+<script src="../js/main.js"></script>
+
+<div class="login-overlay" id="loginOverlay">
+    <div class="login-modal">
+        <div class="login-modal-header">
+            <button class="login-close" id="cerrarLogin" type="button">&times;</button>
+            <img src="../img/logo.jpg" alt="Logo de la empresa" class="login-logo">
+            <h2 id="modalTituloAuth">Bienvenido de nuevo</h2>
+            <p id="modalSubtituloAuth">Inicia sesión para continuar</p>
+        </div>
+
+        <div class="login-modal-body">
+            <div id="authMessage" class="auth-message"></div>
+
+            <form id="formLogin" class="auth-form active">
+                <div class="auth-group">
+                    <label for="loginCorreo">Correo electrónico</label>
+                    <div class="input-icon-wrap">
+                        <span class="input-icon">✉</span>
+                        <input type="email" id="loginCorreo" placeholder="Ingresa tu correo electrónico" required>
+                    </div>
+                </div>
+
+                <div class="auth-group">
+                    <label for="loginPassword">Contraseña</label>
+                    <div class="input-icon-wrap">
+                        <span class="input-icon">🔒</span>
+                        <input type="password" id="loginPassword" placeholder="Ingresa tu contraseña" required>
+                    </div>
+                </div>
+
+                <div class="auth-row-options">
+                    <label><input type="checkbox"> Recordarme</label>
+                    <a href="#" data-auth-form="formRecuperar">¿Olvidaste tu contraseña?</a>
+                </div>
+
+                <button type="submit" class="btn-auth">🔐 Iniciar sesión</button>
+
+                <div class="auth-links">
+                    ¿Aún no te has registrado? ¿Qué esperas? <a href="#" data-auth-form="formRegistro">Dale click aquí</a>
+                </div>
+            </form>
+
+            <form id="formRecuperar" class="auth-form">
+                <div class="auth-group">
+                    <label for="recCorreo">Correo electrónico</label>
+                    <div class="input-icon-wrap">
+                        <span class="input-icon">✉</span>
+                        <input type="email" id="recCorreo" placeholder="Correo de tu cuenta" required>
+                    </div>
+                </div>
+
+                <div class="auth-group">
+                    <label for="recPassword">Nueva contraseña</label>
+                    <div class="input-icon-wrap">
+                        <span class="input-icon">🔒</span>
+                        <input type="password" id="recPassword" placeholder="Ingresa tu nueva contraseña" required>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-auth">↻ Actualizar contraseña</button>
+
+                <div class="auth-links">
+                    ¿Ya recordaste tu contraseña? <a href="#" data-auth-form="formLogin">Volver a iniciar sesión</a>
+                </div>
+            </form>
+
+            <form id="formRegistro" class="auth-form">
+                <div class="auth-grid">
+                    <div class="auth-group">
+                        <label for="regNombre">Nombre</label>
+                        <div class="input-icon-wrap">
+                            <span class="input-icon">👤</span>
+                            <input type="text" id="regNombre" placeholder="Ingresa tu nombre" required>
+                        </div>
+                    </div>
+
+                    <div class="auth-group">
+                        <label for="regApellido">Apellido</label>
+                        <div class="input-icon-wrap">
+                            <span class="input-icon">👤</span>
+                            <input type="text" id="regApellido" placeholder="Ingresa tu apellido" required>
+                        </div>
+                    </div>
+
+                    <div class="auth-group full">
+                        <label for="regCorreo">Correo electrónico</label>
+                        <div class="input-icon-wrap">
+                            <span class="input-icon">✉</span>
+                            <input type="email" id="regCorreo" placeholder="Ingresa tu correo electrónico" required>
+                        </div>
+                    </div>
+
+                    <div class="auth-group full">
+                        <label for="regPassword">Contraseña</label>
+                        <div class="input-icon-wrap">
+                            <span class="input-icon">🔒</span>
+                            <input type="password" id="regPassword" placeholder="Crea una contraseña" required>
+                        </div>
+                    </div>
+
+                    <div class="auth-group full">
+                        <label for="regTelefono">Teléfono</label>
+                        <div class="input-icon-wrap">
+                            <span class="input-icon">☎</span>
+                            <input type="tel" id="regTelefono" placeholder="+51 999 999 999" required>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-auth">👤 Registrarse</button>
+
+                <div class="auth-links">
+                    ¿Ya tienes cuenta? <a href="#" data-auth-form="formLogin">Iniciar sesión</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="../js/login-registro.js"></script>
+</body>
+</html>

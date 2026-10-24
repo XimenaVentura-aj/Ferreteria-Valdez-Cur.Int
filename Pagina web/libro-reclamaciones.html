@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libro de Reclamaciones - Grupo Valdez del Perú</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/carruseles-logos.css">
+    <link rel="stylesheet" href="css/footer-empresa.css">
+    <link rel="stylesheet" href="css/libro-reclamaciones.css">
+    <link rel="stylesheet" href="css/login-registro.css">
+</head>
+<body>
+<span class="auth-login-logo-side">
+    <span class="login-user-box">
+        <button id="btnLoginHeader" class="btn-login-header" type="button">Iniciar sesión</button>
+
+        <span id="loginUserBox" style="display:none;">
+            <button class="usuario-bienvenido" type="button" id="usuarioNombreTexto">Bienvenido</button>
+
+            <span class="menu-usuario" id="menuUsuario">
+                <span class="usuario-card-top">
+                    <span class="usuario-avatar"></span>
+                    <span class="usuario-datos">
+                        <strong class="usuarioNombreCompleto">Usuario</strong>
+                        <span class="usuarioCorreoCard">correo@ejemplo.com</span>
+                        <span class="usuario-verificado">🛡 Cuenta verificada</span>
+                    </span>
+                </span>
+
+
+
+                <button type="button" id="btnCerrarSesion" class="btn-cerrar-sesion-card">↪ Cerrar sesión</button>
+            </span>
+        </span>
+    </span>
+</span>
+
+
+    <main class="libro-wrapper">
+        <section class="libro-hero">
+            <h1>Libro de Reclamaciones</h1>
+            <p>En Grupo Valdez del Perú valoramos tu opinión. Registra aquí tu reclamo o queja para poder atenderte de manera clara, rápida y responsable.</p>
+        </section>
+
+        <section class="libro-card">
+            <div class="aviso">
+                <strong>Importante:</strong> Completa todos los datos solicitados. La información registrada permitirá dar seguimiento a tu solicitud y brindarte una respuesta adecuada.
+            </div>
+
+            <form action="#" method="post">
+                <div class="form-section">
+                    <h2>1. Datos del consumidor</h2>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="nombre">Nombres y apellidos</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Ingresa tus nombres completos" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="documento">DNI / CE / RUC</label>
+                            <input type="text" id="documento" name="documento" placeholder="Número de documento" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono" placeholder="+51 999 999 999" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="correo">Correo electrónico</label>
+                            <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com" required>
+                        </div>
+
+                        <div class="form-group full">
+                            <label for="direccion">Dirección</label>
+                            <input type="text" id="direccion" name="direccion" placeholder="Distrito, provincia y departamento" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h2>2. Identificación del bien contratado</h2>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="tipo-bien">Tipo</label>
+                            <select id="tipo-bien" name="tipo_bien" required>
+                                <option value="">Selecciona una opción</option>
+                                <option value="producto">Producto</option>
+                                <option value="servicio">Servicio</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="monto">Monto reclamado</label>
+                            <input type="text" id="monto" name="monto" placeholder="S/ 0.00">
+                        </div>
+
+                        <div class="form-group full">
+                            <label for="descripcion-bien">Descripción del producto o servicio</label>
+                            <textarea id="descripcion-bien" name="descripcion_bien" placeholder="Describe el producto o servicio relacionado al reclamo"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h2>3. Tipo de solicitud</h2>
+                    <div class="tipo-reclamo">
+                        <label class="radio-card">
+                            <input type="radio" name="tipo_solicitud" value="reclamo" required>
+                            <strong>Reclamo</strong>
+                            <span>Cuando no estás conforme con el producto o servicio recibido.</span>
+                        </label>
+
+                        <label class="radio-card">
+                            <input type="radio" name="tipo_solicitud" value="queja" required>
+                            <strong>Queja</strong>
+                            <span>Cuando existe incomodidad por la atención recibida.</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h2>4. Detalle del reclamo o queja</h2>
+                    <div class="form-grid">
+                        <div class="form-group full">
+                            <label for="detalle">Detalle de lo ocurrido</label>
+                            <textarea id="detalle" name="detalle" placeholder="Explica claramente lo ocurrido" required></textarea>
+                        </div>
+
+                        <div class="form-group full">
+                            <label for="pedido">Pedido del consumidor</label>
+                            <textarea id="pedido" name="pedido" placeholder="Indica qué solución solicitas" required></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h2>5. Confirmación</h2>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="fecha">Fecha</label>
+                            <input type="date" id="fecha" name="fecha" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="firma">Firma o nombre de conformidad</label>
+                            <input type="text" id="firma" name="firma" placeholder="Escribe tu nombre completo" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-acciones">
+                    <button type="submit" class="btn-enviar">Enviar reclamación</button>
+                    <button type="reset" class="btn-limpiar">Limpiar formulario</button>
+                    <a href="index.html" class="btn-volver">Volver al inicio</a>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer-empresa">
+    <div class="footer-contenedor">
+        <div class="footer-columna footer-info">
+            <img class="footer-logo" src="img/logo.jpg" alt="Logo de la empresa">
+            <h3>Grupo Valdez del Perú</h3>
+            <p><strong>Dirección:</strong> Jr. Azangaro 983 int 136 - Cercado de lima</p>
+            <p><strong>Correo:</strong> contacto@grupovaldezperu.com</p>
+            <p><strong>Teléfono:</strong> +51 907 997 495</p>
+        </div>
+
+        <div class="footer-columna footer-links">
+            <h3>Información legal</h3>
+            <a href="terminos-condiciones.html">Términos y condiciones</a>
+            <a href="libro-reclamaciones.html">Libro de reclamaciones</a>
+        </div>
+
+        <div class="footer-columna footer-columna-redes">
+            <h3>Redes sociales</h3>
+            <div class="footer-redes">
+                <a class="facebook" href="https://www.facebook.com/people/Grupo-Valdez-Del-Peru/61560764052104/" target="_blank" rel="noopener" title="Facebook">
+                    <img src="img/Facebook.png" alt="Facebook">
+                </a>
+                <a class="instagram" href="https://www.instagram.com/grupovaldezperu/" target="_blank" rel="noopener" title="Instagram">
+                    <img src="img/Instagram.png" alt="Instagram">
+                </a>
+                <a class="tiktok" href="https://www.tiktok.com/@grupovaldezperu?_r=1&_t=ZS-96lxQh0HkHQ" target="_blank" rel="noopener" title="TikTok">
+                    <img src="img/tiktok.png" alt="TikTok">
+                </a>
+                <a class="whatsapp" href="https://wa.me/51907997495" target="_blank" rel="noopener" title="WhatsApp">
+                    <img src="img/whatsapp.png" alt="WhatsApp">
+                </a>
+            </div>
+            <div class="footer-mapa">
+                <a href="https://www.google.com/maps/search/?api=1&query=Grupo+Valdez+del+Peru" target="_blank" rel="noopener" title="Ver ubicación">
+                    <img src="img/mapa-ubicacion.svg" alt="Mapa de ubicación de la empresa">
+                </a>
+                <p>Haz clic en el mapa para ver la ubicación</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copy">
+        © 2026 Grupo Valdez del Perú. Todos los derechos reservados.
+    </div>
+</footer>
+
+
+<div class="login-overlay" id="loginOverlay">
+    <div class="login-modal">
+        <div class="login-modal-header">
+            <button class="login-close" id="cerrarLogin" type="button">&times;</button>
+            <img src="img/logo.jpg" alt="Logo de la empresa" class="login-logo">
+            <h2 id="modalTituloAuth">Bienvenido de nuevo</h2>
+            <p id="modalSubtituloAuth">Inicia sesión para continuar</p>
+        </div>
+
+        <div class="login-modal-body">
+            <div id="authMessage" class="auth-message"></div>
+
+            <form id="formLogin" class="auth-form active">
+                <div class="auth-group">
+                    <label for="loginCorreo">Correo electrónico</label>
+                    <div class="input-icon-wrap">
+                        <span class="input-icon">✉</span>
+                        <input type="email" id="loginCorreo" placeholder="Ingresa tu correo electrónico" required>
+                    </div>
+                </div>
+
+                <div class="auth-group">
+                    <label for="loginPassword">Contraseña</label>
+                    <div class="input-icon-wrap">
+                        <span class="input-icon">🔒</span>
+                        <input type="password" id="loginPassword" placeholder="Ingresa tu contraseña" required>
+                    </div>
+                </div>
+
+                <div class="auth-row-options">
+                    <label><input type="checkbox"> Recordarme</label>
+                    <a href="#" data-auth-form="formRecuperar">¿Olvidaste tu contraseña?</a>
+                </div>
+
+                <button type="submit" class="btn-auth">🔐 Iniciar sesión</button>
+
+                <div class="auth-links">
+                    ¿Aún no te has registrado? ¿Qué esperas? <a href="#" data-auth-form="formRegistro">Dale click aquí</a>
+                </div>
+            </form>
+
+            <form id="formRecuperar" class="auth-form">
+                <div class="auth-group">
+                    <label for="recCorreo">Correo electrónico</label>
+                    <div class="input-icon-wrap">
+                        <span class="input-icon">✉</span>
+                        <input type="email" id="recCorreo" placeholder="Correo de tu cuenta" required>
+                    </div>
+                </div>
+
+                <div class="auth-group">
+                    <label for="recPassword">Nueva contraseña</label>
+                    <div class="input-icon-wrap">
+                        <span class="input-icon">🔒</span>
+                        <input type="password" id="recPassword" placeholder="Ingresa tu nueva contraseña" required>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-auth">↻ Actualizar contraseña</button>
+
+                <div class="auth-links">
+                    ¿Ya recordaste tu contraseña? <a href="#" data-auth-form="formLogin">Volver a iniciar sesión</a>
+                </div>
+            </form>
+
+            <form id="formRegistro" class="auth-form">
+                <div class="auth-grid">
+                    <div class="auth-group">
+                        <label for="regNombre">Nombre</label>
+                        <div class="input-icon-wrap">
+                            <span class="input-icon">👤</span>
+                            <input type="text" id="regNombre" placeholder="Ingresa tu nombre" required>
+                        </div>
+                    </div>
+
+                    <div class="auth-group">
+                        <label for="regApellido">Apellido</label>
+                        <div class="input-icon-wrap">
+                            <span class="input-icon">👤</span>
+                            <input type="text" id="regApellido" placeholder="Ingresa tu apellido" required>
+                        </div>
+                    </div>
+
+                    <div class="auth-group full">
+                        <label for="regCorreo">Correo electrónico</label>
+                        <div class="input-icon-wrap">
+                            <span class="input-icon">✉</span>
+                            <input type="email" id="regCorreo" placeholder="Ingresa tu correo electrónico" required>
+                        </div>
+                    </div>
+
+                    <div class="auth-group full">
+                        <label for="regPassword">Contraseña</label>
+                        <div class="input-icon-wrap">
+                            <span class="input-icon">🔒</span>
+                            <input type="password" id="regPassword" placeholder="Crea una contraseña" required>
+                        </div>
+                    </div>
+
+                    <div class="auth-group full">
+                        <label for="regTelefono">Teléfono</label>
+                        <div class="input-icon-wrap">
+                            <span class="input-icon">☎</span>
+                            <input type="tel" id="regTelefono" placeholder="+51 999 999 999" required>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-auth">👤 Registrarse</button>
+
+                <div class="auth-links">
+                    ¿Ya tienes cuenta? <a href="#" data-auth-form="formLogin">Iniciar sesión</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="js/login-registro.js"></script>
+</body>
+</html>

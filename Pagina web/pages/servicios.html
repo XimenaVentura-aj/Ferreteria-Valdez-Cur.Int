@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo Valdez del Perú</title>
+    <link rel="stylesheet" href="../css/style.css">
+<style></style>
+    <link rel="stylesheet" href="../css/carruseles-logos.css">
+    <link rel="stylesheet" href="../css/footer-empresa.css">
+    <link rel="stylesheet" href="../css/login-registro.css">
+</head>
+<body>
+<header class="header">
+    <a href="../index.html" class="logo" aria-label="Ir a la página principal"><img src="../img/logo.jpg" alt="Logo Grupo Valdez del Perú" class="logo-img"></a>
+    <nav class="navbar"><span class="auth-login-logo-side">
+    <span class="login-user-box">
+        <button id="btnLoginHeader" class="btn-login-header" type="button">Iniciar sesión</button>
+
+        <span id="loginUserBox" style="display:none;">
+            <button class="usuario-bienvenido" type="button" id="usuarioNombreTexto">Bienvenido</button>
+
+            <span class="menu-usuario" id="menuUsuario">
+                <span class="usuario-card-top">
+                    <span class="usuario-avatar"></span>
+                    <span class="usuario-datos">
+                        <strong class="usuarioNombreCompleto">Usuario</strong>
+                        <span class="usuarioCorreoCard">correo@ejemplo.com</span>
+                        <span class="usuario-verificado">🛡 Cuenta verificada</span>
+                    </span>
+                </span>
+
+
+                <button type="button" id="btnCerrarSesion" class="btn-cerrar-sesion-card">↪ Cerrar sesión</button>
+            </span>
+        </span>
+    </span>
+</span>
+
+        <a href="../index.html">Inicio</a>
+        <a href="productos.html">Productos</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="carrito.html" class="nav-carrito">🛒 Carrito <span class="contador-carrito">0</span></a>
+    </nav>
+</header>
+
+<section class="servicios-hero">
+    <div class="servicios-hero-contenido">
+        <span class="etiqueta-servicio">Atención profesional para tu obra, hogar o negocio</span>
+        <h1>Servicios que brindamos</h1>
+        <p>En Grupo Valdez del Perú te acompañamos antes, durante y después de tu compra con soluciones rápidas, confiables y pensadas para cada proyecto.</p>
+    </div>
+</section>
+
+<section class="servicios-principales">
+    <div class="titulo-servicios">
+        <h2>Los servicios que brindamos son</h2>
+        <p>Trabajamos para que compres mejor, recibas tus productos con facilidad y tengas siempre una atención clara.</p>
+    </div>
+
+    <div class="servicios-grid">
+        <article class="servicio-card">
+            <div class="servicio-icono"></div>
+            <h3>Asesoramiento</h3>
+            <p>Te orientamos para elegir las herramientas, materiales y accesorios adecuados según el trabajo que deseas realizar.</p>
+        </article>
+
+        <article class="servicio-card">
+            <div class="servicio-icono"></div>
+            <h3>Explicación de los productos</h3>
+            <p>Explicamos el uso, beneficios, características y cuidados de cada producto para que compres con seguridad.</p>
+        </article>
+
+        <article class="servicio-card">
+            <div class="servicio-icono"></div>
+            <h3>Recojo en tienda</h3>
+            <p>Realiza tu pedido y recógelo directamente en tienda de forma rápida, ordenada y sin complicaciones.</p>
+        </article>
+
+        <article class="servicio-card">
+            <div class="servicio-icono"></div>
+            <h3>Delivery a domicilio</h3>
+            <p>Llevamos tus productos hasta tu casa, taller u obra para que ahorres tiempo y recibas todo con comodidad.</p>
+        </article>
+
+        <article class="servicio-card servicio-destacado">
+            <div class="servicio-icono"></div>
+            <h3>Envío a nivel nacional por Shalom</h3>
+            <p>Enviamos pedidos a diferentes ciudades del Perú mediante Shalom, cuidando que tus productos lleguen correctamente.</p>
+        </article>
+    </div>
+</section>
+
+<section class="proyectos-section">
+    <div class="titulo-servicios">
+        <h2>También realizamos diferentes proyectos</h2>
+        <p>Brindamos apoyo en trabajos prácticos donde se necesita orientación, materiales adecuados y herramientas de calidad.</p>
+    </div>
+
+    <div class="proyectos-grid">
+        <article class="proyecto-card">
+            <div class="proyecto-numero">01</div>
+            <h3>Instalaciones y mantenimiento del hogar</h3>
+            <p>Apoyamos en proyectos de reparación, instalación de accesorios, mantenimiento básico y mejoras para viviendas.</p>
+            <a href="https://www.youtube.com/results?search_query=proyecto+instalacion+mantenimiento+hogar+herramientas" target="_blank" class="btn-video">Ver video del proyecto</a>
+        </article>
+
+        <article class="proyecto-card">
+            <div class="proyecto-numero">02</div>
+            <h3>Proyectos de construcción ligera</h3>
+            <p>Orientamos en trabajos de armado, fijación, perforación, corte y preparación de materiales para pequeñas obras.</p>
+            <a href="https://www.youtube.com/results?search_query=proyectos+construccion+ligera+herramientas" target="_blank" class="btn-video">Ver video del proyecto</a>
+        </article>
+
+        <article class="proyecto-card">
+            <div class="proyecto-numero">03</div>
+            <h3>Trabajos con herramientas eléctricas</h3>
+            <p>Mostramos el uso correcto de taladros, amoladoras, sierras y otras herramientas para realizar trabajos seguros.</p>
+            <a href="https://www.youtube.com/results?search_query=uso+seguro+de+herramientas+electricas+proyectos" target="_blank" class="btn-video">Ver video del proyecto</a>
+        </article>
+    </div>
+</section>
+
+<section class="videos-proyectos">
+    <div class="titulo-servicios">
+        <h2>Videos de proyectos que realiza la empresa</h2>
+        <p>Revisa ideas, demostraciones y ejemplos de trabajos relacionados con ferretería, herramientas y mantenimiento.</p>
+    </div>
+
+    <div class="videos-grid">
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/6tB5e41Molg" title="Proyecto de herramientas" allowfullscreen></iframe>
+            <h3>Uso de herramientas en proyectos</h3>
+        </div>
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/jH7k0oId4kE" title="Proyecto de mantenimiento" allowfullscreen></iframe>
+            <h3>Mantenimiento y reparación</h3>
+        </div>
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/3Y7dGnLqZ1M" title="Proyecto de construcción" allowfullscreen></iframe>
+            <h3>Ideas para construcción ligera</h3>
+        </div>
+    </div>
+</section>
+    <section class="banners-logos">
+        <div class="banner-logos-card">
+            <h2>Nuestros proveedores</h2>
+            <div class="logo-carousel">
+                <div class="logo-track izquierda">
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="banner-logos-card">
+            <h2>Nuestros clientes</h2>
+            <div class="logo-carousel">
+                <div class="logo-track derecha">
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="../img/logos/logo.jpg" alt="Logo"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+<footer class="footer-empresa">
+    <div class="footer-contenedor">
+        <div class="footer-columna footer-info">
+            <img class="footer-logo" src="../img/logo.jpg" alt="Logo de la empresa">
+            <h3>Grupo Valdez del Perú</h3>
+            <p><strong>Dirección:</strong> Jr. Azangaro 983 int 136 - Cercado de lima</p>
+            <p><strong>Correo:</strong> contacto@grupovaldezperu.com</p>
+            <p><strong>Teléfono:</strong> +51 907 997 495</p>
+        </div>
+
+        <div class="footer-columna footer-links">
+            <h3>Información legal</h3>
+            <a href="../terminos-condiciones.html">Términos y condiciones</a>
+            <a href="../libro-reclamaciones.html">Libro de reclamaciones</a>
+        </div>
+
+        <div class="footer-columna footer-columna-redes">
+            <h3>Redes sociales</h3>
+            <div class="footer-redes">
+                <a class="facebook" href="https://www.facebook.com/people/Grupo-Valdez-Del-Peru/61560764052104/" target="_blank" rel="noopener" title="Facebook">
+                    <img src="../img/Facebook.png" alt="Facebook">
+                </a>
+                <a class="instagram" href="https://www.instagram.com/grupovaldezperu/" target="_blank" rel="noopener" title="Instagram">
+                    <img src="../img/Instagram.png" alt="Instagram">
+                </a>
+                <a class="tiktok" href="https://www.tiktok.com/@grupovaldezperu?_r=1&_t=ZS-96lxQh0HkHQ" target="_blank" rel="noopener" title="TikTok">
+                    <img src="../img/tiktok.png" alt="TikTok">
+                </a>
+                <a class="whatsapp" href="https://wa.me/51907997495" target="_blank" rel="noopener" title="WhatsApp">
+                    <img src="../img/whatsapp.png" alt="WhatsApp">
+                </a>
+            </div>
+            <div class="footer-mapa">
+                <a href="https://www.google.com/maps/search/?api=1&query=Grupo+Valdez+del+Peru" target="_blank" rel="noopener" title="Ver ubicación">
+                    <img src="../img/mapa-ubicacion.svg" alt="Mapa de ubicación de la empresa">
+                </a>
+                <p>Haz clic en el mapa para ver la ubicación</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copy">
+        © 2026 Grupo Valdez del Perú. Todos los derechos reservados.
+    </div>
+</footer>
+
+
+<div class="login-overlay" id="loginOverlay">
+    <div class="login-modal">
+        <div class="login-modal-header">
+            <button class="login-close" id="cerrarLogin" type="button">&times;</button>
+            <img src="../img/logo.jpg" alt="Logo de la empresa" class="login-logo">
+            <h2 id="modalTituloAuth">Bienvenido de nuevo</h2>
+            <p id="modalSubtituloAuth">Inicia sesión para continuar</p>
+        </div>
+
+        <div class="login-modal-body">
+            <div id="authMessage" class="auth-message"></div>
+
+            <form id="formLogin" class="auth-form active">
+                <div class="auth-group">
+                    <label for="loginCorreo">Correo electrónico</label>
+                    <div class="input-icon-wrap">
+                        <span class="input-icon">✉</span>
+                        <input type="email" id="loginCorreo" placeholder="Ingresa tu correo electrónico" required>
+                    </div>
+                </div>
+
+                <div class="auth-group">
+                    <label for="loginPassword">Contraseña</label>
+                    <div class="input-icon-wrap">
+                        <span class="input-icon">🔒</span>
+                        <input type="password" id="loginPassword" placeholder="Ingresa tu contraseña" required>
+                    </div>
+                </div>
+
+                <div class="auth-row-options">
+                    <label><input type="checkbox"> Recordarme</label>
+                    <a href="#" data-auth-form="formRecuperar">¿Olvidaste tu contraseña?</a>
+                </div>
+
+                <button type="submit" class="btn-auth">🔐 Iniciar sesión</button>
+
+                <div class="auth-links">
+                    ¿Aún no te has registrado? ¿Qué esperas? <a href="#" data-auth-form="formRegistro">Dale click aquí</a>
+                </div>
+            </form>
+
+            <form id="formRecuperar" class="auth-form">
+                <div class="auth-group">
+                    <label for="recCorreo">Correo electrónico</label>
+                    <div class="input-icon-wrap">
+                        <span class="input-icon">✉</span>
+                        <input type="email" id="recCorreo" placeholder="Correo de tu cuenta" required>
+                    </div>
+                </div>
+
+                <div class="auth-group">
+                    <label for="recPassword">Nueva contraseña</label>
+                    <div class="input-icon-wrap">
+                        <span class="input-icon">🔒</span>
+                        <input type="password" id="recPassword" placeholder="Ingresa tu nueva contraseña" required>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-auth">↻ Actualizar contraseña</button>
+
+                <div class="auth-links">
+                    ¿Ya recordaste tu contraseña? <a href="#" data-auth-form="formLogin">Volver a iniciar sesión</a>
+                </div>
+            </form>
+
+            <form id="formRegistro" class="auth-form">
+                <div class="auth-grid">
+                    <div class="auth-group">
+                        <label for="regNombre">Nombre</label>
+                        <div class="input-icon-wrap">
+                            <span class="input-icon">👤</span>
+                            <input type="text" id="regNombre" placeholder="Ingresa tu nombre" required>
+                        </div>
+                    </div>
+
+                    <div class="auth-group">
+                        <label for="regApellido">Apellido</label>
+                        <div class="input-icon-wrap">
+                            <span class="input-icon">👤</span>
+                            <input type="text" id="regApellido" placeholder="Ingresa tu apellido" required>
+                        </div>
+                    </div>
+
+                    <div class="auth-group full">
+                        <label for="regCorreo">Correo electrónico</label>
+                        <div class="input-icon-wrap">
+                            <span class="input-icon">✉</span>
+                            <input type="email" id="regCorreo" placeholder="Ingresa tu correo electrónico" required>
+                        </div>
+                    </div>
+
+                    <div class="auth-group full">
+                        <label for="regPassword">Contraseña</label>
+                        <div class="input-icon-wrap">
+                            <span class="input-icon">🔒</span>
+                            <input type="password" id="regPassword" placeholder="Crea una contraseña" required>
+                        </div>
+                    </div>
+
+                    <div class="auth-group full">
+                        <label for="regTelefono">Teléfono</label>
+                        <div class="input-icon-wrap">
+                            <span class="input-icon">☎</span>
+                            <input type="tel" id="regTelefono" placeholder="+51 999 999 999" required>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-auth">👤 Registrarse</button>
+
+                <div class="auth-links">
+                    ¿Ya tienes cuenta? <a href="#" data-auth-form="formLogin">Iniciar sesión</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="../js/login-registro.js"></script>
+</body>
+</html>

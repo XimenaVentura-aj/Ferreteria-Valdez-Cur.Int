@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo Valdez del Perú</title>
+    <link rel="stylesheet" href="css/style.css">
+<style></style>
+    <link rel="stylesheet" href="css/carruseles-logos.css">
+    <link rel="stylesheet" href="css/footer-empresa.css">
+    <link rel="stylesheet" href="css/login-registro.css">
+</head>
+<body>
+
+<header class="header">
+    <a href="index.html" class="logo" aria-label="Ir a la página principal"><img src="img/logo.jpg" alt="Logo Grupo Valdez del Perú" class="logo-img"></a>
+    <nav class="navbar"><span class="auth-login-logo-side">
+    <span class="login-user-box">
+        <button id="btnLoginHeader" class="btn-login-header" type="button">Iniciar sesión</button>
+
+        <span id="loginUserBox" style="display:none;">
+            <button class="usuario-bienvenido" type="button" id="usuarioNombreTexto">Bienvenido</button>
+
+            <span class="menu-usuario" id="menuUsuario">
+                <span class="usuario-card-top">
+                    <span class="usuario-avatar"></span>
+                    <span class="usuario-datos">
+                        <strong class="usuarioNombreCompleto">Usuario</strong>
+                        <span class="usuarioCorreoCard">correo@ejemplo.com</span>
+                        <span class="usuario-verificado">🛡 Cuenta verificada</span>
+                    </span>
+                </span>
+
+
+                <button type="button" id="btnCerrarSesion" class="btn-cerrar-sesion-card">↪ Cerrar sesión</button>
+            </span>
+        </span>
+    </span>
+</span>
+
+        <a href="index.html">Inicio</a>
+        <a href="pages/productos.html">Productos</a>
+        <a href="pages/servicios.html">Servicios</a>
+        <a href="pages/contacto.html">Contacto</a>
+        <a href="pages/carrito.html" class="nav-carrito">🛒 Carrito <span class="contador-carrito">0</span></a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-text">
+        <h1>Todo para construir, reparar y mejorar tu hogar</h1>
+        <p>Herramientas, pinturas, electricidad, gasfitería y materiales de alta calidad al mejor precio.</p>
+        <a href="pages/productos.html" class="btn">Ver productos</a>
+    </div>
+</section>
+
+<section class="mini-banners">
+
+    <div class="mini-banner izquierda">
+        <div class="contenido-banner">
+            <h2>Si quieres saber más de nuestros productos</h2>
+            <p>Descubre herramientas, materiales y equipos de alta calidad para tus proyectos.</p>
+            <a href="pages/productos.html" class="btn-mini">Productos</a>
+        </div>
+    </div>
+
+    <div class="mini-banner derecha">
+        <div class="contenido-banner">
+            <h2>Si quieres conocer más de nuestros servicios</h2>
+            <p>Conoce nuestros servicios especializados para construcción y mantenimiento.</p>
+            <a href="pages/servicios.html" class="btn-mini">Servicios</a>
+        </div>
+    </div>
+
+</section>
+
+
+<section class="seccion">
+    <h2>Productos nuevos</h2>
+    <p class="descripcion">Conoce nuestras últimas herramientas y equipos disponibles.</p>
+
+    <div class="grid">
+        <div class="card producto">
+            <img src="https://images.unsplash.com/photo-1572981779307-38b8cabb2407?auto=format&fit=crop&w=900&q=80" alt="Taladro inalámbrico">
+            <h3>Taladro Inalámbrico Bosch</h3>
+            <p><strong>Categoría:</strong> Inalámbrica</p>
+            <p>Taladro moderno, ligero y potente para trabajos en casa o taller.</p>
+            <p><strong>Precio:</strong> S/. 150.00</p>
+            <a class="link" href="https://www.youtube.com/results?search_query=taladro+inalambrico+bosch+demostracion" target="_blank">Video demostrativo</a>
+            <a class="link" href="https://www.bosch-professional.com/pe/es/" target="_blank">Descargar ficha técnica</a>
+            <button onclick="agregarCarrito('Taladro Inalámbrico Bosch')">Agregar al carrito</button>
+        </div>
+
+        <div class="card producto">
+            <img src="https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?auto=format&fit=crop&w=900&q=80" alt="Sierra eléctrica">
+            <h3>Sierra Circular Makita</h3>
+            <p><strong>Categoría:</strong> Eléctrica</p>
+            <p>Equipo ideal para cortes precisos en madera y materiales resistentes.</p>
+            <p><strong>Precio:</strong> S/. 50.00</p>
+            <a class="link" href="https://www.youtube.com/results?search_query=sierra+circular+makita+demostracion" target="_blank">Video demostrativo</a>
+            <a class="link" href="https://www.makita.com.pe/" target="_blank">Descargar ficha técnica</a>
+            <button onclick="agregarCarrito('Sierra Circular Makita')">Agregar al carrito</button>
+        </div>
+
+        <div class="card producto">
+            <img src="https://images.unsplash.com/photo-1581783898377-1c85bf937427?auto=format&fit=crop&w=900&q=80" alt="Set de herramientas manuales">
+            <h3>Set de Herramientas Stanley</h3>
+            <p><strong>Categoría:</strong> Manual</p>
+            <p>Juego completo de herramientas para reparaciones rápidas y seguras.</p>
+            <p><strong>Precio:</strong> S/. 100.00</p>
+            <a class="link" href="https://www.youtube.com/results?search_query=set+herramientas+stanley+demostracion" target="_blank">Video demostrativo</a>
+            <a class="link" href="https://www.stanleytools.com/" target="_blank">Descargar ficha técnica</a>
+            <button onclick="agregarCarrito('Set de Herramientas Stanley')">Agregar al carrito</button>
+        </div>
+
+        <div class="card producto">
+            <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=900&q=80" alt="Atornillador inalámbrico">
+            <h3>Atornillador Inalámbrico DeWalt</h3>
+            <p><strong>Categoría:</strong> Inalámbrica</p>
+            <p>Compacto, resistente y perfecto para instalaciones rápidas.</p>
+            <p><strong>Precio:</strong> S/. 180.00</p>
+            <a class="link" href="https://www.youtube.com/results?search_query=atornillador+inalambrico+dewalt+demostracion" target="_blank">Video demostrativo</a>
+            <a class="link" href="https://www.dewalt.com/" target="_blank">Descargar ficha técnica</a>
+            <button onclick="agregarCarrito('Atornillador Inalámbrico DeWalt')">Agregar al carrito</button>
+        </div>
+    </div>
+</section>
+
+<section class="seccion fondo-claro">
+    <h2>Productos destacados</h2>
+    <p class="descripcion">Los productos más recomendados por nuestros clientes.</p>
+
+    <div class="grid">
+        <div class="card producto">
+            <img src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=900&q=80" alt="Pintura látex">
+            <h3>Pintura Látex Vencedor</h3>
+            <p><strong>Categoría:</strong> Manual</p>
+            <p>Pintura de gran cobertura, acabado fino y alta duración.</p>
+            <p><strong>Precio:</strong> S/. 30.00</p>
+            <a class="link" href="https://www.youtube.com/results?search_query=pintura+latex+demostracion" target="_blank">Video demostrativo</a>
+            <a class="link" href="https://www.vencedor.com.pe/" target="_blank">Descargar ficha técnica</a>
+            <button onclick="agregarCarrito('Pintura Látex Vencedor')">Agregar al carrito</button>
+        </div>
+
+        <div class="card producto">
+            <img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=900&q=80" alt="Foco LED">
+            <h3>Foco LED Philips</h3>
+            <p><strong>Categoría:</strong> Eléctrica</p>
+            <p>Iluminación eficiente, bajo consumo y larga vida útil.</p>
+            <p><strong>Precio:</strong> S/. 15.00</p>
+            <a class="link" href="https://www.youtube.com/results?search_query=foco+led+philips+demostracion" target="_blank">Video demostrativo</a>
+            <a class="link" href="https://www.lighting.philips.com/" target="_blank">Descargar ficha técnica</a>
+            <button onclick="agregarCarrito('Foco LED Philips')">Agregar al carrito</button>
+        </div>
+
+        <div class="card producto">
+            <img src="https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=900&q=80" alt="Martillo">
+            <h3>Martillo de Acero Truper</h3>
+            <p><strong>Categoría:</strong> Manual</p>
+            <p>Herramienta resistente para trabajos de construcción y reparación.</p>
+            <p><strong>Precio:</strong> S/. 10.00</p>
+            <a class="link" href="https://www.youtube.com/results?search_query=martillo+truper+demostracion" target="_blank">Video demostrativo</a>
+            <a class="link" href="https://www.truper.com/" target="_blank">Descargar ficha técnica</a>
+            <button onclick="agregarCarrito('Martillo de Acero Truper')">Agregar al carrito</button>
+        </div>
+
+        <div class="card producto">
+            <img src="https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?auto=format&fit=crop&w=900&q=80" alt="Amoladora eléctrica">
+            <h3>Amoladora Eléctrica Black+Decker</h3>
+            <p><strong>Categoría:</strong> Eléctrica</p>
+            <p>Ideal para cortar, pulir y desbastar diferentes materiales.</p>
+            <p><strong>Precio:</strong> S/. 110.00</p>
+            <a class="link" href="https://www.youtube.com/results?search_query=amoladora+black+decker+demostracion" target="_blank">Video demostrativo</a>
+            <a class="link" href="https://www.blackanddecker.com/" target="_blank">Descargar ficha técnica</a>
+            <button onclick="agregarCarrito('Amoladora Eléctrica Black+Decker')">Agregar al carrito</button>
+        </div>
+    </div>
+</section>
+    <section class="banners-logos">
+        <div class="banner-logos-card">
+            <h2>Nuestros proveedores</h2>
+            <div class="logo-carousel">
+                <div class="logo-track izquierda">
+                    <div class="logo-empresa"><img src="img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="img/logos/logo.jpg" alt="Logo"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="banner-logos-card">
+            <h2>Nuestros clientes</h2>
+            <div class="logo-carousel">
+                <div class="logo-track derecha">
+                    <div class="logo-empresa"><img src="img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="img/logos/logo.jpg" alt="Logo"></div>
+                    <div class="logo-empresa"><img src="img/logos/logo.jpg" alt="Logo"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+<footer class="footer-empresa">
+    <div class="footer-contenedor">
+        <div class="footer-columna footer-info">
+            <img class="footer-logo" src="img/logo.jpg" alt="Logo de la empresa">
+            <h3>Grupo Valdez del Perú</h3>
+            <p><strong>Dirección:</strong> Jr. Azangaro 983 int 136 - Cercado de lima</p>
+            <p><strong>Correo:</strong> contacto@grupovaldezperu.com</p>
+            <p><strong>Teléfono:</strong> +51 907 997 495</p>
+        </div>
+
+        <div class="footer-columna footer-links">
+            <h3>Información legal</h3>
+            <a href="terminos-condiciones.html">Términos y condiciones</a>
+            <a href="libro-reclamaciones.html">Libro de reclamaciones</a>
+        </div>
+
+        <div class="footer-columna footer-columna-redes">
+            <h3>Redes sociales</h3>
+            <div class="footer-redes">
+                <a class="facebook" href="https://www.facebook.com/people/Grupo-Valdez-Del-Peru/61560764052104/" target="_blank" rel="noopener" title="Facebook">
+                    <img src="img/Facebook.png" alt="Facebook">
+                </a>
+                <a class="instagram" href="https://www.instagram.com/grupovaldezperu/" target="_blank" rel="noopener" title="Instagram">
+                    <img src="img/Instagram.png" alt="Instagram">
+                </a>
+                <a class="tiktok" href="https://www.tiktok.com/@grupovaldezperu?_r=1&_t=ZS-96lxQh0HkHQ" target="_blank" rel="noopener" title="TikTok">
+                    <img src="img/tiktok.png" alt="TikTok">
+                </a>
+                <a class="whatsapp" href="https://wa.me/51907997495" target="_blank" rel="noopener" title="WhatsApp">
+                    <img src="img/whatsapp.png" alt="WhatsApp">
+                </a>
+            </div>
+            <div class="footer-mapa">
+                <a href="https://www.google.com/maps/search/?api=1&query=Grupo+Valdez+del+Peru" target="_blank" rel="noopener" title="Ver ubicación">
+                    <img src="img/mapa-ubicacion.svg" alt="Mapa de ubicación de la empresa">
+                </a>
+                <p>Haz clic en el mapa para ver la ubicación</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copy">
+        © 2026 Grupo Valdez del Perú. Todos los derechos reservados.
+    </div>
+</footer>
+
+
+<script src="js/main.js"></script>
+
+<div class="login-overlay" id="loginOverlay">
+    <div class="login-modal">
+        <div class="login-modal-header">
+            <button class="login-close" id="cerrarLogin" type="button">&times;</button>
+            <img src="img/logo.jpg" alt="Logo de la empresa" class="login-logo">
+            <h2 id="modalTituloAuth">Bienvenido de nuevo</h2>
+            <p id="modalSubtituloAuth">Inicia sesión para continuar</p>
+        </div>
+
+        <div class="login-modal-body">
+            <div id="authMessage" class="auth-message"></div>
+
+            <form id="formLogin" class="auth-form active">
+                <div class="auth-group">
+                    <label for="loginCorreo">Correo electrónico</label>
+                    <div class="input-icon-wrap">
+                        <span class="input-icon">✉</span>
+                        <input type="email" id="loginCorreo" placeholder="Ingresa tu correo electrónico" required>
+                    </div>
+                </div>
+
+                <div class="auth-group">
+                    <label for="loginPassword">Contraseña</label>
+                    <div class="input-icon-wrap">
+                        <span class="input-icon">🔒</span>
+                        <input type="password" id="loginPassword" placeholder="Ingresa tu contraseña" required>
+                    </div>
+                </div>
+
+                <div class="auth-row-options">
+                    <label><input type="checkbox"> Recordarme</label>
+                    <a href="#" data-auth-form="formRecuperar">¿Olvidaste tu contraseña?</a>
+                </div>
+
+                <button type="submit" class="btn-auth">🔐 Iniciar sesión</button>
+
+                <div class="auth-links">
+                    ¿Aún no te has registrado? ¿Qué esperas? <a href="#" data-auth-form="formRegistro">Dale click aquí</a>
+                </div>
+            </form>
+
+            <form id="formRecuperar" class="auth-form">
+                <div class="auth-group">
+                    <label for="recCorreo">Correo electrónico</label>
+                    <div class="input-icon-wrap">
+                        <span class="input-icon">✉</span>
+                        <input type="email" id="recCorreo" placeholder="Correo de tu cuenta" required>
+                    </div>
+                </div>
+
+                <div class="auth-group">
+                    <label for="recPassword">Nueva contraseña</label>
+                    <div class="input-icon-wrap">
+                        <span class="input-icon">🔒</span>
+                        <input type="password" id="recPassword" placeholder="Ingresa tu nueva contraseña" required>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-auth">↻ Actualizar contraseña</button>
+
+                <div class="auth-links">
+                    ¿Ya recordaste tu contraseña? <a href="#" data-auth-form="formLogin">Volver a iniciar sesión</a>
+                </div>
+            </form>
+
+            <form id="formRegistro" class="auth-form">
+                <div class="auth-grid">
+                    <div class="auth-group">
+                        <label for="regNombre">Nombre</label>
+                        <div class="input-icon-wrap">
+                            <span class="input-icon">👤</span>
+                            <input type="text" id="regNombre" placeholder="Ingresa tu nombre" required>
+                        </div>
+                    </div>
+
+                    <div class="auth-group">
+                        <label for="regApellido">Apellido</label>
+                        <div class="input-icon-wrap">
+                            <span class="input-icon">👤</span>
+                            <input type="text" id="regApellido" placeholder="Ingresa tu apellido" required>
+                        </div>
+                    </div>
+
+                    <div class="auth-group full">
+                        <label for="regCorreo">Correo electrónico</label>
+                        <div class="input-icon-wrap">
+                            <span class="input-icon">✉</span>
+                            <input type="email" id="regCorreo" placeholder="Ingresa tu correo electrónico" required>
+                        </div>
+                    </div>
+
+                    <div class="auth-group full">
+                        <label for="regPassword">Contraseña</label>
+                        <div class="input-icon-wrap">
+                            <span class="input-icon">🔒</span>
+                            <input type="password" id="regPassword" placeholder="Crea una contraseña" required>
+                        </div>
+                    </div>
+
+                    <div class="auth-group full">
+                        <label for="regTelefono">Teléfono</label>
+                        <div class="input-icon-wrap">
+                            <span class="input-icon">☎</span>
+                            <input type="tel" id="regTelefono" placeholder="+51 999 999 999" required>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-auth">👤 Registrarse</button>
+
+                <div class="auth-links">
+                    ¿Ya tienes cuenta? <a href="#" data-auth-form="formLogin">Iniciar sesión</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="js/login-registro.js"></script>
+</body>
+</html>

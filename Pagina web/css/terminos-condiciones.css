@@ -1,0 +1,67 @@
+
+body{
+ margin:0;
+ font-family:'Segoe UI',Arial,sans-serif;
+ background:#f4f6f9;
+}
+.hero-terminos{
+ background:linear-gradient(135deg,#0f172a,#1e293b,#f97316);
+ color:white;
+ text-align:center;
+ padding:70px 20px;
+}
+.hero-terminos h1{
+ margin:0;
+ font-size:48px;
+ font-weight:900;
+}
+.hero-terminos p{
+ max-width:900px;
+ margin:15px auto 0;
+ line-height:1.8;
+ font-size:17px;
+}
+.container-terminos{
+ max-width:1200px;
+ margin:-40px auto 50px;
+ padding:0 20px;
+}
+.card-terminos{
+ background:white;
+ border-radius:25px;
+ box-shadow:0 15px 35px rgba(0,0,0,.12);
+ padding:40px;
+ border-top:6px solid #f97316;
+}
+.card-terminos h2,
+.card-terminos h3{
+ color:#ea580c;
+}
+.card-terminos p,
+.card-terminos li{
+ line-height:1.9;
+ color:#374151;
+}
+.card-terminos table{
+ width:100%;
+ border-collapse:collapse;
+ margin:20px 0;
+}
+.card-terminos table td,
+.card-terminos table th{
+ border:1px solid #ddd;
+ padding:10px;
+}
+.btn-volver{
+ display:inline-block;
+ margin-top:25px;
+ background:#f97316;
+ color:white;
+ text-decoration:none;
+ padding:14px 25px;
+ border-radius:12px;
+ font-weight:bold;
+}
+.btn-volver:hover{
+ background:#ea580c;
+}
